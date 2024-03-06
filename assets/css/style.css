@@ -47,12 +47,12 @@ h6 {
 
 @font-face {
   font-family: gilroy;
-  src: url(/assets/fonts/Gilroy-Regular.ttf);
+  src: url(assets/fonts/Gilroy-Regular.ttf);
 }
 
 @font-face {
   font-family: qualy;
-  src: url(/assets/fonts/Qualy.ttf);
+  src: url(assets/fonts/Qualy.ttf);
 }
 
 /*--------------------------------------------------------------
@@ -911,7 +911,9 @@ section {
 /* ------------------------------------------------------------- */
 
 /* Login Page */
-
+.modal{
+  background-color: #18d26e;
+}
 
 
 /* -------------------------------------------------------------- */
