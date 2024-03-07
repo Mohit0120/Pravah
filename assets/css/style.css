@@ -47,12 +47,12 @@ h6 {
 
 @font-face {
   font-family: gilroy;
-  src: url(assets/fonts/Gilroy-Regular.ttf);
+  src: url(/assets/fonts/Gilroy-Regular.ttf);
 }
 
 @font-face {
   font-family: qualy;
-  src: url(assets/fonts/Qualy.ttf);
+  src: url(/assets/fonts/Qualy.ttf);
 }
 
 /*--------------------------------------------------------------
@@ -913,6 +913,8 @@ section {
 /* Login Page */
 .modal{
   background-color: #18d26e;
+  height: 100px;
+  width: 100px;
 }
 
 
@@ -980,3 +982,60 @@ section {
   font-size: 13px;
 }
 
+/* --------------------- */
+
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f4f4; */
+  margin: 0;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form {
+  display: block;
+}
+
+.register-form {
+  display: none;
+}
+
+.form a {
+  text-decoration: none;
+  color: #3498db;
+  margin-right: 5px;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}

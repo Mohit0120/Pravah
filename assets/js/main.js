@@ -165,3 +165,18 @@
   });
 
 })()
+
+// --------------- //
+
+function toggleForm(formType) {
+  const loginForm = document.querySelector('.login-form');
+  const registerForm = document.querySelector('.register-form');
+
+  if (formType === 'register') {
+      loginForm.style.display = 'none';
+      registerForm.style.display = 'block';
+  } else {
+      loginForm.style.display = 'block';
+      registerForm.style.display = 'none';
+  }
+}

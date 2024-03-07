@@ -38,7 +38,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <a href="#" class="navbar-brand"><img src="/assets/img/logo-3.png" alt="#" height="45"></a>
+        <a href="#" class="navbar-brand"><img src="assets/img/logo-3.png" alt="#" height="45"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -61,25 +61,76 @@
 
   <!-- login -->
 
- <section>
+  <section>
     <div class="container">
-        <div class="row">
-            <div class="modal">
-                <div class="col-lg-6">
-                    <form action="#">
-                        <label for="name">name: </label>
-                        <input type="text">
-                    </form>
-                </div>
-                <div class="col-lg-6">
-        
-                </div>
-            </div>
-        </div>
-      </div>
- </section>
+      <div class="row ">
+        <div class="col-md-6"></div>
+          <div class="col-md-6 d-flex justify-content-center">
+              <div class="form-container mt-5">
+                  <form class="form login-form" action="#" method="post">
+                      <!-- Login form fields -->
+                      <h2>Login</h2>
+                      <div class="mb-3">
+                          <input type="text" class="form-control" name="username" placeholder="Username" required>
+                      </div>
+                      <div class="mb-3">
+                          <input type="password" class="form-control" name="password" placeholder="Password" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="userType" class="form-label">User Type:</label>
+                          <select class="form-select" name="userType" id="userType" required>
+                              <option value="user">User</option>
+                              <option value="admin">Admin</option>
+                          </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Login</button>
+                      <p class="mt-3">
+                          <a href="#" onclick="toggleForm('register')">Don't have an account? Register here</a>
+                      </p>
+                  </form>
 
-  <!-- ---------------------------------------------- -->
+                  <form class="form register-form" action="#" method="post">
+                      <!-- Registration form fields -->
+                      <h2>Register</h2>
+                      <div class="mb-3">
+                          <input type="text" class="form-control" name="name" placeholder="Name" required>
+                      </div>
+                      <div class="mb-3">
+                          <input type="text" class="form-control" name="fatherName" placeholder="Father's Name" required>
+                      </div>
+                      <div class="mb-3">
+                          <input type="text" class="form-control" name="username" placeholder="Username" required>
+                      </div>
+                      <div class="mb-3">
+                          <input type="password" class="form-control" name="password" placeholder="Password" required>
+                      </div>
+                      <div class="mb-3">
+                          <textarea class="form-control" name="address" placeholder="Address" rows="3" required></textarea>
+                      </div>
+                      <div class="mb-3">
+                          <label for="gender" class="form-label">Gender:</label>
+                          <select class="form-select" name="gender" id="gender" required>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                          </select>
+                      </div>
+                      <div class="mb-3">
+                          <label for="userType" class="form-label">User Type:</label>
+                          <select class="form-select" name="userType" id="userType" required>
+                              <option value="user">User</option>
+                              <option value="admin">Admin</option>
+                          </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Register</button>
+                      <p class="mt-3">
+                          <a href="#" onclick="toggleForm('login')">Already have an account? Login here</a>
+                      </p>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
